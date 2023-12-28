@@ -4,10 +4,31 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "diffusion_models"
+readme = "README.md"
 authors = [{name = "Chanhyuk Jung", email = "urw.7rs@icloud.com"}]
 license = {file = "LICENSE"}
-classifiers = ["License :: OSI Approved :: MIT License"]
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Science/Research',
+    "License :: OSI Approved :: MIT License",
+    'Programming Language :: Python',
+    'Topic :: Scientific/Engineering :: Artificial Intelligence',
+]
+requires-python = ">=3.9"
+
+keywords = ["deep learning", "diffusion", "jax", "pytorch"]
+
+dependencies = []
+
 dynamic = ["version", "description"]
 
 [project.urls]
 Home = "https://github.com/urw7rs/diffusion-models.git"
+Source = "https://github.com/urw7rs/diffusion-models.git"
+
+[project.optional-dependencies]
+testing = [
+    'pytest',
+    'pytest-xdist'
+]
